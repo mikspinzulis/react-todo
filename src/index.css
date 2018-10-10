@@ -6,9 +6,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  animation: myanimation 1s infinite;
+  height: 1000px;
 
+}
+button{
+  animation-name:rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+input {
+  width: 70%;
+  padding: 10px;
+  margin: 100px;
+}
+.List {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.Task {
+  width: 20%;
+  height: 100px;
+  transition: all 0.2s ease-in-out;
+  margin: 32px;
+  box-shadow: 10px 10px #00000021;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+@keyframes myanimation {
+  0% {
+    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbc 10px, #465298 10px, #46529838 20px );
+  }
+  25% {
+    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbce8 10px, #465298 10px, #46529838 20px );
+  }
+  50% {
+    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbcb3 10px, #465298 10px, #46529838 20px );
+  }
+  75% {
+    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbca6 10px, #465298 10px, #46529838 20px );
+  }
+  100% {
+    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbcbf 10px, #465298 10px, #46529838 20px );
+  }
+}
+@keyframes rotate{
+
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+.Task:hover {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(3%, 10%);
+  -moz-transform: translate(-50%, -50%);
+  box-shadow: 10px 10px #00000000;
 }
