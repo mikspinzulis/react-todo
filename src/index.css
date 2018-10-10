@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: myanimation 1s infinite;
+  animation: myanimation 2s infinite;
   height: 1000px;
 
 }
@@ -46,19 +46,19 @@ input {
 }
 @keyframes myanimation {
   0% {
-    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbc 10px, #465298 10px, #46529838 20px );
+    background: repeating-linear-gradient(45deg, #606dbc42, #606dbc03 10px, #46529800 10px, #46529838 20px);
   }
   25% {
-    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbce8 10px, #465298 10px, #46529838 20px );
+    background: repeating-linear-gradient(45deg, #606dbc42, #606dbc00 10px, #46529800 10px, #46529838 20px);
   }
   50% {
-    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbcb3 10px, #465298 10px, #46529838 20px );
+    background: repeating-linear-gradient(45deg, #606dbc42, #606dbc38 10px, #46529800 10px, #46529838 20px);
   }
   75% {
-    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbca6 10px, #465298 10px, #46529838 20px );
+    background: repeating-linear-gradient(45deg, #606dbc42, #606dbc00 10px, #46529800 10px, #46529838 20px);
   }
   100% {
-    background: repeating-linear-gradient( 45deg, #606dbc42, #606dbcbf 10px, #465298 10px, #46529838 20px );
+    background: repeating-linear-gradient(45deg, #606dbc42, #606dbc00 10px, #46529800 10px, #46529838 20px);
   }
 }
 @keyframes rotate{
@@ -73,4 +73,10 @@ input {
   transform: translate(3%, 10%);
   -moz-transform: translate(-50%, -50%);
   box-shadow: 10px 10px #00000000;
+}
+input {
+  width: 70%;
+  padding: 10px;
+  margin: 100px;
+  border: 3px solid #00000075;
 }
