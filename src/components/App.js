@@ -9,8 +9,7 @@ class App extends Component {
     state = {
         inputValue: "",
         todos:[
-            { value: "Clean the kitchen", done: false },
-            { value: "Wash car", done: true }
+         
         ]
     }
 
